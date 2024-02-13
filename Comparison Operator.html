@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Comparison Operator</title>
+        <link rel="stylesheet" href="Operators.css" />
+    </head>
+    <body>
+        <p class="font2">Operations by Operators in Java Script</p>
+        <p class="font1">Comparison Operator</p>
+        <div style="text-align: center;">
+            <label for="number1">Number 1: </label>
+            <input type="number" id="number1">
+            <label for="number2">Number 2: </label>
+            <input type="number" id="number2">
+            <button id="evaluateBtn" class="font3">Evaluate</button></a>
+        </div>
+        <div id="resultContainer" style="text-align: center;" class="font4"></div>
+        <script>
+            document.getElementById("evaluateBtn").addEventListener("click", function(event)
+            {
+                var num1 = parseFloat(document.getElementById("number1").value);
+                var num2 = parseFloat(document.getElementById("number2").value);
+                if(!isNaN(num1) && !isNaN(num2))
+                {
+                    var result = "";
+                    if(num1 > num2)
+                    {
+                        result = num1 + " is Greater than " + num2;
+                    }
+                    else if(num1 < num2)
+                    {
+                        result = num1 + " is Less than " + num2;
+                    }
+                    else
+                    {
+                        result = num1 + " is Equal to " + num2;
+                    }
+                    var resultParagraph = document.createElement("p");
+                    resultParagraph.textContent = result;
+                    document.getElementById("resultContainer").appendChild(resultParagraph);
+                }
+                else
+                {
+                    alert("Please enter valid numbers.");
+                }
+            });
+        </script>
+    </body>
+</html>

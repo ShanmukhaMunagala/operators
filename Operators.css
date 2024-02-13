@@ -1,0 +1,31 @@
+body{
+    background-color: #F5EEE6;
+}
+.font1{
+    color: #FF004D;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 25px;
+}
+.font2{
+    color: #50623A;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 36px;
+}
+.font3{
+    color: #76453B;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 20px;
+}
+.font4{
+    color: #1B1A55;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 22px;
+}
